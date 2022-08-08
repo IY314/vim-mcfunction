@@ -1,10 +1,18 @@
 syntax keyword mcTodos TODO XXX FIXME NOTE contained
 syntax match mcComment "\v^#.*" contains=mcTodos
-syntax keyword mcKeywords
-	\ execute
-	\ function
-	\ if
-	\ unless
+
+syntax keyword mcSubcommand
+    \ align
+    \ anchored
+    \ as
+    \ at
+    \ facing
+    \ in
+    \ positioned
+    \ rotated
+    \ store
+    \ if
+    \ unless
 
 syntax keyword mcCommands
 	\ advancement
@@ -85,7 +93,7 @@ syntax keyword mcCommands
 syntax match mcOperators "\v[~]|([+*/-][=]?)"
 syntax match mcSelector "\v\@[aerps]"
 syntax match mcNamespace "\v[A-Za-z0-9_]+:"
-syntax match mcNumber "\v[+-]?([0-9]+([.][0-9*])?)|(.[0-9]+)"
+syntax match mcNumber "\v[+-]?([0-9]+([.][0-9*])?)|(.[0-9]+)[dfbsL]?"
 syntax keyword mcBoolean true false
 syntax keyword mcNull null
 syntax region mcString matchgroup=mcQuote start="\"" end="\"" skip="\\\""
@@ -101,7 +109,6 @@ syntax match mcNbtKeyString contained "\v\"[A-Za-z0-9_-]+\"\s*:"hs=s+1,he=e-1
 
 highlight default link mcTodos Todo
 highlight default link mcComment Comment
-highlight default link mcKeywords Keyword
 highlight default link mcCommands Function
 highlight default link mcOperators Operator
 highlight default link mcSelector Type
@@ -112,9 +119,8 @@ highlight default link mcNumber Number
 highlight default link mcSelectorOperator Operator
 
 hi def link mcQuote Quote
-hi def link mcSelectorDelimiter Normal
-hi def link mcSelectorValue Constant
-hi def link mcNbtBracket Operator
+hi def link mcSelectorDelimiter Delimiter
+hi def link mcNbtBracket Delimiter
 hi def link mcNbtNumber Number
 hi def link mcNbtKey Tag
 hi def link mcNbtKeyString Tag
