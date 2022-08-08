@@ -8,71 +8,79 @@ syntax keyword mcKeywords
 syntax keyword mcCommands
 	\ advancement
 	\ ban
-	\ ban
 	\ ban-ip
 	\ banlist
-	\ blockdata
+    \ bossbar
 	\ clear
 	\ clone
+    \ data
+    \ datapack
 	\ debug
 	\ defaultgamemode
 	\ deop
 	\ difficulty
 	\ effect
 	\ enchant
-	\ entitydata
+    \ execute
+    \ experience
 	\ fill
+    \ forceload
 	\ gamemode
 	\ gamerule
 	\ give
 	\ help
+    \ item
+    \ jfr
 	\ kick
 	\ kill
 	\ list
 	\ locate
+    \ loot
 	\ me
+    \ msg
 	\ op
 	\ pardon
+    \ pardon-ip
 	\ particle
+    \ perf
+    \ place
 	\ playsound
 	\ publish
 	\ recipe
 	\ reload
-	\ replaceitem
-	\ save
 	\ save-all
 	\ save-off
 	\ save-on
 	\ say
+    \ schedule
 	\ scoreboard
 	\ seed
 	\ setblock
 	\ setidletimeout
-	\ setmaxplayers
 	\ setworldspawn
 	\ spawnpoint
+    \ spectate
 	\ spreadplayers
-	\ stats
 	\ stop
 	\ stopsound
 	\ summon
+    \ tag
+    \ team
+    \ teammsg
 	\ teleport
 	\ tell
 	\ tellraw
-	\ testfor
-	\ testforblock
-	\ testforblocks
 	\ time
 	\ title
-	\ toggledownfall
+    \ tm
 	\ tp
-	\ transferserver
 	\ trigger
+    \ w
 	\ weather
 	\ whitelist
 	\ worldborder
-	\ wsserver
 	\ xp
+
 syntax match mcOperators "\v[~]|([+*/-][=]?)"
 syntax match mcSelector "\v\@[aerps]"
 syntax match mcNamespace "\v[A-Za-z0-9_]+:"
