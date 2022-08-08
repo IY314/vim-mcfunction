@@ -5,6 +5,7 @@ syntax keyword mcKeywords
 	\ function
 	\ if
 	\ unless
+
 syntax keyword mcCommands
 	\ advancement
 	\ ban
@@ -103,12 +104,13 @@ highlight default link mcComment Comment
 highlight default link mcKeywords Keyword
 highlight default link mcCommands Function
 highlight default link mcOperators Operator
-highlight default link mcSelector PreProc
+highlight default link mcSelector Type
 highlight default link mcSelectorArgs Tag
-highlight default link mcNamespace Tag
+highlight default link mcNamespace Structure
 highlight default link mcString String
 highlight default link mcNumber Number
-highlight default link mcSelectorOperator PreProc
+highlight default link mcSelectorOperator Operator
+
 hi def link mcQuote Quote
 hi def link mcSelectorDelimiter Normal
 hi def link mcSelectorValue Constant
